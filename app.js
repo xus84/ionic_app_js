@@ -18,4 +18,13 @@ buttonSave.addEventListener("click", () => {
     const name = productName.value;
     const price = productPrice.value;
     createNewProduct(name, price );
+
+
+    clearInputs();
 })
+
+/* for reset the form */
+const clearInputs = () => {
+    productName.value = "";
+    productPrice.value = "";
+}
